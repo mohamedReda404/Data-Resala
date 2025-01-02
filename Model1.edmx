@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ResalaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="assquf">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="الاسم" Type="nvarchar" MaxLength="50" />
+          <Property Name="الحاله" Type="nvarchar" MaxLength="50" />
+          <Property Name="الرقم القومي" Type="int" />
+          <Property Name="الحاله الاجتماعيه" Type="nvarchar" MaxLength="50" />
+          <Property Name="رقم الموبيل1" Type="int" />
+          <Property Name="رقم الموبيل2" Type="int" />
+          <Property Name="المنطقه" Type="nvarchar" MaxLength="50" />
+          <Property Name="العنوان بالتفصيل" Type="nvarchar(max)" />
+          <Property Name="تاريخ الاستكشاف" Type="int" />
+          <Property Name="تاريخ التقييم" Type="int" />
+          <Property Name="التقييم" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="binaa">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="الاسم" Type="nvarchar" MaxLength="50" />
+          <Property Name="الحاله" Type="nvarchar" MaxLength="50" />
+          <Property Name="رقم الموبيل1" Type="int" />
+          <Property Name="رقم الموبيل2" Type="int" />
+          <Property Name="المنطقه" Type="nvarchar" MaxLength="50" />
+          <Property Name="العنوان بالتفصيل" Type="nvarchar" MaxLength="100" />
+          <Property Name="تاريخ الاستكشاف" Type="int" />
+          <Property Name="تاريخ التقييم" Type="int" />
+          <Property Name="التقييم" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="kisaa">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="الاسم" Type="nvarchar" MaxLength="50" />
+          <Property Name="الحاله" Type="nvarchar" MaxLength="50" />
+          <Property Name="الرقم القومي" Type="int" />
+          <Property Name="الحاله الاجتماعيه" Type="nvarchar" MaxLength="50" />
+          <Property Name="رقم الموبيل1" Type="int" />
+          <Property Name="رقم الموبيل2" Type="int" />
+          <Property Name="المنطقه" Type="nvarchar" MaxLength="50" />
+          <Property Name="العنوان بالتفصيل" Type="nvarchar" MaxLength="100" />
+          <Property Name="تاريخ الاستكشاف" Type="int" />
+          <Property Name="تاريخ التقييم" Type="int" />
+          <Property Name="التقييم" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="mashareaa">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="الاسم" Type="nvarchar" MaxLength="50" />
+          <Property Name="الحاله" Type="nvarchar" MaxLength="50" />
+          <Property Name="الرقم القومي" Type="int" />
+          <Property Name="الحاله الاجتماعيه" Type="nvarchar" MaxLength="50" />
+          <Property Name="رقم الموبيل1" Type="int" />
+          <Property Name="رقم الموبيل2" Type="int" />
+          <Property Name="المنطقه" Type="nvarchar" MaxLength="50" />
+          <Property Name="العنوان بالتفصيل" Type="nvarchar(max)" />
+          <Property Name="تاريخ الاستكشاف" Type="int" />
+          <Property Name="تاريخ التقييم" Type="int" />
+          <Property Name="التقييم" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="sdad_el_dean">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="الاسم" Type="nvarchar" MaxLength="50" />
+          <Property Name="الحاله" Type="nvarchar" MaxLength="50" />
+          <Property Name="الرقم القومي" Type="int" />
+          <Property Name="الحاله الاجتماعيه" Type="nvarchar" MaxLength="50" />
+          <Property Name="رقم الموبيل1" Type="int" />
+          <Property Name="رقم الموبيل2" Type="int" />
+          <Property Name="المنطقه" Type="nvarchar" MaxLength="50" />
+          <Property Name="العنوان بالتفصيل" Type="nvarchar" MaxLength="100" />
+          <Property Name="تاريخ الاستكشاف" Type="int" />
+          <Property Name="تاريخ التقييم" Type="int" />
+          <Property Name="التقييم" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="tiby1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="الاسم" Type="nvarchar" MaxLength="50" />
+          <Property Name="الحاله" Type="nvarchar" MaxLength="50" />
+          <Property Name="رقم الموبيل1" Type="int" />
+          <Property Name="رقم الموبيل2" Type="int" />
+          <Property Name="المنطقه" Type="nvarchar" MaxLength="50" />
+          <Property Name="العنوان بالتفصيل" Type="nvarchar" MaxLength="100" />
+          <Property Name="تاريخ الاستكشاف" Type="int" />
+          <Property Name="تاريخ التفييم" Type="int" />
+          <Property Name="التقييم" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="ResalaModelStoreContainer">
+          <EntitySet Name="assquf" EntityType="Self.assquf" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="binaa" EntityType="Self.binaa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="kisaa" EntityType="Self.kisaa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mashareaa" EntityType="Self.mashareaa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sdad_el_dean" EntityType="Self.sdad_el_dean" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tiby1" EntityType="Self.tiby1" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ResalaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="assquf">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="الاسم" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="الحاله" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="الرقم_القومي" Type="Int32" />
+          <Property Name="الحاله_الاجتماعيه" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="رقم_الموبيل1" Type="Int32" />
+          <Property Name="رقم_الموبيل2" Type="Int32" />
+          <Property Name="المنطقه" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="العنوان_بالتفصيل" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="تاريخ_الاستكشاف" Type="Int32" />
+          <Property Name="تاريخ_التقييم" Type="Int32" />
+          <Property Name="التقييم" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="binaa">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="الاسم" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="الحاله" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="رقم_الموبيل1" Type="Int32" />
+          <Property Name="رقم_الموبيل2" Type="Int32" />
+          <Property Name="المنطقه" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="العنوان_بالتفصيل" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="تاريخ_الاستكشاف" Type="Int32" />
+          <Property Name="تاريخ_التقييم" Type="Int32" />
+          <Property Name="التقييم" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="kisaa">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="الاسم" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="الحاله" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="الرقم_القومي" Type="Int32" />
+          <Property Name="الحاله_الاجتماعيه" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="رقم_الموبيل1" Type="Int32" />
+          <Property Name="رقم_الموبيل2" Type="Int32" />
+          <Property Name="المنطقه" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="العنوان_بالتفصيل" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="تاريخ_الاستكشاف" Type="Int32" />
+          <Property Name="تاريخ_التقييم" Type="Int32" />
+          <Property Name="التقييم" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="mashareaa">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="الاسم" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="الحاله" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="الرقم_القومي" Type="Int32" />
+          <Property Name="الحاله_الاجتماعيه" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="رقم_الموبيل1" Type="Int32" />
+          <Property Name="رقم_الموبيل2" Type="Int32" />
+          <Property Name="المنطقه" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="العنوان_بالتفصيل" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="تاريخ_الاستكشاف" Type="Int32" />
+          <Property Name="تاريخ_التقييم" Type="Int32" />
+          <Property Name="التقييم" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="sdad_el_dean">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="الاسم" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="الحاله" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="الرقم_القومي" Type="Int32" />
+          <Property Name="الحاله_الاجتماعيه" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="رقم_الموبيل1" Type="Int32" />
+          <Property Name="رقم_الموبيل2" Type="Int32" />
+          <Property Name="المنطقه" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="العنوان_بالتفصيل" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="تاريخ_الاستكشاف" Type="Int32" />
+          <Property Name="تاريخ_التقييم" Type="Int32" />
+          <Property Name="التقييم" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tiby1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="الاسم" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="الحاله" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="رقم_الموبيل1" Type="Int32" />
+          <Property Name="رقم_الموبيل2" Type="Int32" />
+          <Property Name="المنطقه" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="العنوان_بالتفصيل" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="تاريخ_الاستكشاف" Type="Int32" />
+          <Property Name="تاريخ_التفييم" Type="Int32" />
+          <Property Name="التقييم" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="ResalaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="assquf" EntityType="Self.assquf" />
+          <EntitySet Name="binaa" EntityType="Self.binaa" />
+          <EntitySet Name="kisaa" EntityType="Self.kisaa" />
+          <EntitySet Name="mashareaa" EntityType="Self.mashareaa" />
+          <EntitySet Name="sdad_el_dean" EntityType="Self.sdad_el_dean" />
+          <EntitySet Name="tiby1" EntityType="Self.tiby1" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ResalaModelStoreContainer" CdmEntityContainer="ResalaEntities">
+          <EntitySetMapping Name="assquf">
+            <EntityTypeMapping TypeName="ResalaModel.assquf">
+              <MappingFragment StoreEntitySet="assquf">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="الاسم" ColumnName="الاسم" />
+                <ScalarProperty Name="الحاله" ColumnName="الحاله" />
+                <ScalarProperty Name="الرقم_القومي" ColumnName="الرقم القومي" />
+                <ScalarProperty Name="الحاله_الاجتماعيه" ColumnName="الحاله الاجتماعيه" />
+                <ScalarProperty Name="رقم_الموبيل1" ColumnName="رقم الموبيل1" />
+                <ScalarProperty Name="رقم_الموبيل2" ColumnName="رقم الموبيل2" />
+                <ScalarProperty Name="المنطقه" ColumnName="المنطقه" />
+                <ScalarProperty Name="العنوان_بالتفصيل" ColumnName="العنوان بالتفصيل" />
+                <ScalarProperty Name="تاريخ_الاستكشاف" ColumnName="تاريخ الاستكشاف" />
+                <ScalarProperty Name="تاريخ_التقييم" ColumnName="تاريخ التقييم" />
+                <ScalarProperty Name="التقييم" ColumnName="التقييم" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="binaa">
+            <EntityTypeMapping TypeName="ResalaModel.binaa">
+              <MappingFragment StoreEntitySet="binaa">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="الاسم" ColumnName="الاسم" />
+                <ScalarProperty Name="الحاله" ColumnName="الحاله" />
+                <ScalarProperty Name="رقم_الموبيل1" ColumnName="رقم الموبيل1" />
+                <ScalarProperty Name="رقم_الموبيل2" ColumnName="رقم الموبيل2" />
+                <ScalarProperty Name="المنطقه" ColumnName="المنطقه" />
+                <ScalarProperty Name="العنوان_بالتفصيل" ColumnName="العنوان بالتفصيل" />
+                <ScalarProperty Name="تاريخ_الاستكشاف" ColumnName="تاريخ الاستكشاف" />
+                <ScalarProperty Name="تاريخ_التقييم" ColumnName="تاريخ التقييم" />
+                <ScalarProperty Name="التقييم" ColumnName="التقييم" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="kisaa">
+            <EntityTypeMapping TypeName="ResalaModel.kisaa">
+              <MappingFragment StoreEntitySet="kisaa">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="الاسم" ColumnName="الاسم" />
+                <ScalarProperty Name="الحاله" ColumnName="الحاله" />
+                <ScalarProperty Name="الرقم_القومي" ColumnName="الرقم القومي" />
+                <ScalarProperty Name="الحاله_الاجتماعيه" ColumnName="الحاله الاجتماعيه" />
+                <ScalarProperty Name="رقم_الموبيل1" ColumnName="رقم الموبيل1" />
+                <ScalarProperty Name="رقم_الموبيل2" ColumnName="رقم الموبيل2" />
+                <ScalarProperty Name="المنطقه" ColumnName="المنطقه" />
+                <ScalarProperty Name="العنوان_بالتفصيل" ColumnName="العنوان بالتفصيل" />
+                <ScalarProperty Name="تاريخ_الاستكشاف" ColumnName="تاريخ الاستكشاف" />
+                <ScalarProperty Name="تاريخ_التقييم" ColumnName="تاريخ التقييم" />
+                <ScalarProperty Name="التقييم" ColumnName="التقييم" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mashareaa">
+            <EntityTypeMapping TypeName="ResalaModel.mashareaa">
+              <MappingFragment StoreEntitySet="mashareaa">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="الاسم" ColumnName="الاسم" />
+                <ScalarProperty Name="الحاله" ColumnName="الحاله" />
+                <ScalarProperty Name="الرقم_القومي" ColumnName="الرقم القومي" />
+                <ScalarProperty Name="الحاله_الاجتماعيه" ColumnName="الحاله الاجتماعيه" />
+                <ScalarProperty Name="رقم_الموبيل1" ColumnName="رقم الموبيل1" />
+                <ScalarProperty Name="رقم_الموبيل2" ColumnName="رقم الموبيل2" />
+                <ScalarProperty Name="المنطقه" ColumnName="المنطقه" />
+                <ScalarProperty Name="العنوان_بالتفصيل" ColumnName="العنوان بالتفصيل" />
+                <ScalarProperty Name="تاريخ_الاستكشاف" ColumnName="تاريخ الاستكشاف" />
+                <ScalarProperty Name="تاريخ_التقييم" ColumnName="تاريخ التقييم" />
+                <ScalarProperty Name="التقييم" ColumnName="التقييم" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sdad_el_dean">
+            <EntityTypeMapping TypeName="ResalaModel.sdad_el_dean">
+              <MappingFragment StoreEntitySet="sdad_el_dean">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="الاسم" ColumnName="الاسم" />
+                <ScalarProperty Name="الحاله" ColumnName="الحاله" />
+                <ScalarProperty Name="الرقم_القومي" ColumnName="الرقم القومي" />
+                <ScalarProperty Name="الحاله_الاجتماعيه" ColumnName="الحاله الاجتماعيه" />
+                <ScalarProperty Name="رقم_الموبيل1" ColumnName="رقم الموبيل1" />
+                <ScalarProperty Name="رقم_الموبيل2" ColumnName="رقم الموبيل2" />
+                <ScalarProperty Name="المنطقه" ColumnName="المنطقه" />
+                <ScalarProperty Name="العنوان_بالتفصيل" ColumnName="العنوان بالتفصيل" />
+                <ScalarProperty Name="تاريخ_الاستكشاف" ColumnName="تاريخ الاستكشاف" />
+                <ScalarProperty Name="تاريخ_التقييم" ColumnName="تاريخ التقييم" />
+                <ScalarProperty Name="التقييم" ColumnName="التقييم" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tiby1">
+            <EntityTypeMapping TypeName="ResalaModel.tiby1">
+              <MappingFragment StoreEntitySet="tiby1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="الاسم" ColumnName="الاسم" />
+                <ScalarProperty Name="الحاله" ColumnName="الحاله" />
+                <ScalarProperty Name="رقم_الموبيل1" ColumnName="رقم الموبيل1" />
+                <ScalarProperty Name="رقم_الموبيل2" ColumnName="رقم الموبيل2" />
+                <ScalarProperty Name="المنطقه" ColumnName="المنطقه" />
+                <ScalarProperty Name="العنوان_بالتفصيل" ColumnName="العنوان بالتفصيل" />
+                <ScalarProperty Name="تاريخ_الاستكشاف" ColumnName="تاريخ الاستكشاف" />
+                <ScalarProperty Name="تاريخ_التفييم" ColumnName="تاريخ التفييم" />
+                <ScalarProperty Name="التقييم" ColumnName="التقييم" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
