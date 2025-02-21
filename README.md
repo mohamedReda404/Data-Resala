@@ -2,8 +2,8 @@
 
 <div align="center">
   
- <img width=100% src="Automatic-Weather-Station-for-Agriculture-Argo-AWS-2.jpg" alt="logo"></a>
-
+ <img width=100% src="images.jpeg" alt="logo"></a>
+<p>A system to facilitate the organization of data and facilitate access to it, as this helped save more than 40% of time in trying to obtain customer data and easily display it and know the number of customers for each department with the utmost ease.</p>
 </div>
 
 
