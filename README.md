@@ -15,20 +15,13 @@
 - [relationship in the database](#database)
 
 ## 📙 About <a name = "about"></a>
-<h1>Windows form APP c# project</h1>
+<h1>Data_resala Project</h1>
 <p>***A picture showing what the system looks like in reality</p>
- <img width=100% src="v-6.jpg" alt="logo"></a>
-<P>It is a queue system and this system is used to organize the entry of customers to facilitate services within hospitals and facilitate patients
+<img width=100% src="Form1 21_02_2025 05_23_16 م.png" alt="logo"></a>
+<p>
+The <strong>data_resala</strong> project is a data management system designed to efficiently track and manage the number of customers with accuracy. This system provides a structured and simplified way to store and organize data, enhancing operational efficiency and record-keeping capabilities. 
 
-Where the system works as follows:
-
-1- The patient chooses his doctor through the program through the basic machine of the system inside the hospital, which is the interface of windows form c#
-
-2- The machine prints a sheet with information about the patient's number waiting for the doctor
-
-3- The doctor requests from his control panel the next patient
-
-4- The voice speaker requests the patient and the patient enters his doctor accordingly
+Built with a strong foundation of security and rapid access to information, <strong>data_resala</strong> offers a smart and reliable data solution. The system allows easy identification of data through numerical segmentation, facilitating a streamlined data collection and management process.
 </p>
 
 
