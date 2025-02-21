@@ -30,6 +30,7 @@ Built with a strong foundation of security and rapid access to information, <str
 - **.net**
 - **C#**
 - **Windows form APP**
+- **ASP.NET
 - **microsoft sql server**
 ## 📷 Screenshots 
 
