@@ -48,60 +48,14 @@ Built with a strong foundation of security and rapid access to information, <str
    <hr>
    <hr>
    <h2 name="database">###The relationship in the database</h2>
-  <p>+----------------+
-|     main      |
-|-------------- |
-| id (PK)       |
-| data          |
-+----------------+
-         |
---------------------------------------------------------
-|         |         |         |         |         |    |
-+------------+ +------------+ +------------+ +------------+
-|  table1    | |  table2    | |  table3    | |  table4    | 
-|------------| |------------| |------------| |------------| 
-| id (PK)    | | id (PK)    | | id (PK)    | | id (PK)    | 
-| data       | | data       | | data       | | data       | 
-| main_id (FK)| | main_id (FK)| | main_id (FK)| | main_id (FK)|  
-+------------+ +------------+ +------------+ +------------+ 
-         |
---------------------------------------------------------
-|         |         |         |         |         |    |
-+------------+ +------------+ +------------+ +------------+
-|  table5    | |  table6    | |  table7    | |  table8    | 
-|------------| |------------| |------------| |------------| 
-| id (PK)    | | id (PK)    | | id (PK)    | | id (PK)    | 
-| data       | | data       | | data       | | data       | 
-| main_id (FK)| | main_id (FK)| | main_id (FK)| | main_id (FK)|  
-+------------+ +------------+ +------------+ +------------+ 
-         |
---------------------------------------------------------
-|         |         |         |         |         |    |
-+------------+ +------------+ +------------+ +------------+
-|  table9    | |  table10   | |  table11   | |  table12   | 
-|------------| |------------| |------------| |------------| 
-| id (PK)    | | id (PK)    | | id (PK)    | | id (PK)    | 
-| data       | | data       | | data       | | data       | 
-| main_id (FK)| | main_id (FK)| | main_id (FK)| | main_id (FK)|  
-+------------+ +------------+ +------------+ +------------+ 
-         |
---------------------------------------------------------
-|         |         |         |         |        
-+------------+ +------------+ +------------+ +------------+
-|  table13   | |  table14   | |  table15   | |  table16   | 
-|------------| |------------| |------------| |------------| 
-| id (PK)    | | id (PK)    | | id (PK)    | | id (PK)    | 
-| data       | | data       | | data       | | data       | 
-| main_id (FK)| | main_id (FK)| | main_id (FK)| | main_id (FK)|  
-+------------+ +------------+ +------------+ +------------+ 
-</p>
+           <img width=100% src="صورة واتساب بتاريخ 2025-02-25 في 12.16.01_15838dfe.jpg" alt="logo"></a>
    <br>
-   <img width=100% src="Untitled.png" alt="logo"></a>
+ 
 
-<p>**As we can see above, I have 200 tables in the project database 
-All of them have a relationship with the main table 
-Each table represents a doctor in the GUI, and each doctor represents a button 
-The patient orders through it</p>
+<p>The main table serves as the central data aggregator, receiving information from all the subsidiary tables.
+All other tables (table1 - table16) are linked to it via the foreign key main_id (FK).
+The diagram uses lines (| and -) to visually represent the relationships between tables.
+The system can be easily expanded by adding new tables following the same structure.</p>
 
    <hr>
    <hr>
